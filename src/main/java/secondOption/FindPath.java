@@ -42,7 +42,7 @@ public class FindPath {
         int startRow = -1, startCol = -1;
         int targetRow = -1, targetCol = -1;
 
-        // Найти стартовую и конечную позиции
+       //inicializacia start a target bod
         for (int r = 0; r < rows; r++) {
             for (int c = 0; c < cols; c++) {
                 if (maze[r][c] == START) {
@@ -59,7 +59,7 @@ public class FindPath {
             return "Error: Start or target not found";
         }
 
-        // Инициализация BFS
+       //cesta, visited
         boolean[][] visited = new boolean[rows][cols];
         Queue<int[]> queue = new LinkedList<>();
         Queue<String> pathQueue = new LinkedList<>();
@@ -67,9 +67,11 @@ public class FindPath {
         queue.offer(new int[]{startRow, startCol});
         pathQueue.offer("");
 
+
+        //start bod is visited
         visited[startRow][startCol] = true;
 
-        // BFS для поиска кратчайшего пути
+
         while (!queue.isEmpty()) {
             int[] position = queue.poll();
             String path = pathQueue.poll();
@@ -83,6 +85,7 @@ public class FindPath {
                 }
             }
 
+            //Breadth-first search algorithm
             for (int i = 0; i < MOVES.length; i++) {
                 int newRow = r + MOVES[i][0];
                 int newCol = c + MOVES[i][1];
@@ -99,10 +102,12 @@ public class FindPath {
         return "Error: No path found";
     }
 
+    //overenie ci bod je mimo rozsahu alebo blocked alebo visited
     private static boolean isValidMove(int row, int col, int rows, int cols, char[][] maze, boolean[][] visited) {
         return row >= 0 && row < rows && col >= 0 && col < cols && !visited[row][col] && maze[row][col] != BLOCKED;
     }
 
+    //vypis cesty
     private static String formatPath(String path) {
         StringBuilder formattedPath = new StringBuilder();
         for (int i = 0; i < path.length(); i++) {
