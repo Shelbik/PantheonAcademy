@@ -23,3 +23,10 @@ Napr
 ed5adbac-9369-d013-5cae-fb22fea42170:hello
 
 a budeme vidiet spravu
+
+
+#secondOption
+je nastavena konfiguracia na file. ak konfiguracia nebude tak do console vkladame mapu a dvakrat stalicme ENTER
+
+#firstOption
+Treba len stlacit vybrat configuraciu a spustit
