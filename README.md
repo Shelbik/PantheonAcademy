@@ -27,6 +27,8 @@ a budeme vidiet spravu
 
 #secondOption
 je nastavena konfiguracia na file. ak konfiguracia nebude tak do console vkladame mapu a dvakrat stalicme ENTER
+Napr
+application - class - secondOption.FindPath - do parametra absolutnu cestu k file s mapou
 
 #firstOption
-Treba len stlacit vybrat configuraciu a spustit
+treba spravit application configuracia --alg1 12345678901234567890 11111111111111111111 a class Main
