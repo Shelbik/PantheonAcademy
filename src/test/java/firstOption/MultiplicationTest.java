@@ -1,10 +1,13 @@
-package org.example.firstOption;
+package firstOption;
 
-import org.testng.annotations.Test;
+import org.example.firstOption.BigIntMultiplication;
+import org.example.firstOption.CustomMultiplication;
+import org.example.firstOption.Multiplication;
+import org.junit.jupiter.api.Test;
 
 import java.math.BigInteger;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class MultiplicationTest {
 
