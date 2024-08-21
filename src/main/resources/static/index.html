@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Chatty</title>
+    <style>
+        #messages {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-top: 10px;
+            height: 200px;
+            overflow-y: auto;
+        }
+        #userList li {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<h1>Chatty</h1>
+<div>
+    <h2>Users</h2>
+    <ul id="userList"></ul>
+</div>
+<div>
+    <input type="text" id="messageInput" placeholder="Type your message here" />
+    <button onclick="sendMessage()">Send</button>
+</div>
+<div id="messages"></div>
+<script src="chat.js"></script>
+</body>
+</html>
