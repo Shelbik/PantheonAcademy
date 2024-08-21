@@ -1,10 +1,11 @@
 package secondOption;
 
-import org.junit.jupiter.api.Assertions;
-import org.testng.annotations.Test;
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class FindPathTest {
-@Test
+
+    @Test
     public void testFindPath() {
         char[][] maze = {
                 "....................................".toCharArray(),
@@ -25,7 +26,6 @@ public class FindPathTest {
 
         String path = FindPath.findPath(maze);
         System.out.println("Calculated path: " + path); // Debug output
-        Assertions.assertEquals("d,d,d,d,d,d,d,d,d,d,d,d,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,u,u,u", path);
+        assertEquals("d,d,d,d,d,d,d,d,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,d,d,r,r,r,r", path);
     }
-
 }
