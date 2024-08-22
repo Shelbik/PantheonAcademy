@@ -5,7 +5,8 @@ Intelij -  run start.bat
 
 http://localhost:8080/ - chat
 http://localhost:8080/api/users 
-https://piehost.com/websocket-tester
+
+https://piehost.com/websocket-tester + ws://localhost:8080/chat (link to connect)
 
 
 Napr
